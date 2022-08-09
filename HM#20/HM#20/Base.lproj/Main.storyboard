@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20017"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HM_20" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-q5-dL8">
+                                <rect key="frame" x="0.0" y="124" width="414" height="216"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmv-OI-6u6">
+                                <rect key="frame" x="108" y="504" width="199" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="240-mF-Tcy"/>
+                                    <constraint firstAttribute="width" constant="199" id="xTn-Xf-Cgh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Prime Numbers"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nmv-OI-6u6" firstAttribute="top" secondItem="xFM-q5-dL8" secondAttribute="bottom" constant="164" id="9bC-6j-UU4"/>
+                            <constraint firstItem="xFM-q5-dL8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="T7h-Cm-00z"/>
+                            <constraint firstItem="xFM-q5-dL8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lAF-3n-BOm"/>
+                            <constraint firstItem="nmv-OI-6u6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="qrE-fC-31A"/>
+                            <constraint firstItem="xFM-q5-dL8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wJr-ei-PWO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="printButton" destination="nmv-OI-6u6" id="GZN-ee-VM5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
